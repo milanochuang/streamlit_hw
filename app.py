@@ -1,19 +1,11 @@
-# from bixin import predict
-
-# if __name__ == '__main__':
-#     from snownlp import SnowNLP
-# # 文本
-#     text = u'有夠令人討厭！'
-# # 分析
-#     s = SnowNLP(text)
-# # 输出情绪为积极的概率
-#     print(s.sentiments)
+# 國立政治大學語言所 110555010 莊昊耘
+# https://milanochuang-streamlit-hw-app-mokxk9.streamlitapp.com
 
 import streamlit as st
 from snownlp import SnowNLP
 
-st.title('中文情感分類器')
-st.write('這是中文情感分類器，請在下方輸入任意文字')
+st.title('中文分數評分')
+st.write('我會幫你判斷這段中文的情感分數，請在下方輸入任意文字')
 st.image("dora.png")
 test_str = st.text_input('請在這裡打上任意文字')
 if test_str:
