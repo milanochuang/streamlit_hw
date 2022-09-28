@@ -11,7 +11,3 @@ test_str = st.text_input('請在這裡打上任意文字')
 if test_str:
     result = SnowNLP(test_str)
     st.markdown('你的分數是**{}** 分'.format(result.sentiments))
-    if float(result.sentiments) <= 5:
-        st.markdown('*生活要過的放鬆一點喔*')
-    elif float(result.sentiments) > 5:
-        st.markdown('*很好很好，繼續保持正向喔！*')
